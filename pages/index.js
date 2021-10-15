@@ -15,9 +15,7 @@ export default function Index() {
           <p className="font-serif tracking-widest text-4xl">
             作りたいに忠実に
           </p>
-          <p className="font-serif tracking-widest text-2xl mt-6">
-        宮本さくら
-          </p>
+          <p className="font-serif tracking-widest text-2xl mt-6">宮本さくら</p>
         </div>
         <div className="absolute right-10"></div>
         <div className="mt-24 flex flex-col font-serif tracking-widest items-center">
@@ -170,6 +168,7 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>レストラン情報共有アプリ</p>
+                  <p>※モバイルサイトです</p>
                 </div>
               </div>
             </div>
@@ -180,7 +179,7 @@ export default function Index() {
               </div>
               <div className="pt-5 ml-6 text-gray-500">
                 <a
-                  href="https://kadai-11-23.sakura.ne.jp/chatapp02/public/login_form.php"
+                  href="https://spotlight-spot.vercel.app/"
                   className="text-2xl border-b-2 px-4 pb-1"
                 >
                   Spot-Light
@@ -208,16 +207,16 @@ export default function Index() {
               </div>
             </div>
           </div>
+          <p className="pt-24 text-center text-2xs">
+            Contact :　sakura.m.208@gmail.com
+          </p>
+          <p className="p-5 pb-10 text-center text-2xs">
+            Twitter ：　<a href="https://twitter.com/sakura_m_04">sakura.m</a>
+          </p>
         </div>
       </main>
-      <footer className="bg-white">
-        <p className="pt-5 text-center text-2xs">
-          Contact : sakura.m.208@gmail.com
-        </p>
-        <p className="p-5 pb-10 text-center text-xs">
-          Copyright © 2021 LAB 11, inc. All Rights Reserved.
-        </p>
-      </footer>
+      {/* <footer className="">
+      </footer> */}
     </>
   );
 }
