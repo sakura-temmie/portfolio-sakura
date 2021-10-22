@@ -2,6 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import topImage from "../public/topImage.jpg";
+import githubImage from "../public/01.png";
+
+const twitterImage =
+  "https://news.mynavi.jp/article/20210809-1942830/images/000a_l.jpg/webp";
 
 export default function Index() {
   return (
@@ -32,13 +36,13 @@ export default function Index() {
             <div className="rounded-full h-40 w-40 flex items-center border-pink-300 justify-center border border-pink-400">
               JavaScript
               <br />
-              (vanilla)
+              (vanilla.js)
             </div>
             <div className="rounded-full h-40 w-40 flex items-center border-yellow-300 ml-6 justify-center border border-pink-400">
-              React
+              React / Next.js
             </div>
-            <div className="rounded-full h-40 w-40 flex items-center border-yellow-300 ml-6 justify-center border border-pink-400">
-              Next.js
+            <div className="rounded-full h-40 w-40 flex items-center ml-6 border-yellow-300 justify-center border border-pink-400">
+              Firebase
             </div>
             <div className="rounded-full h-40 w-40 flex items-center ml-6 border-yellow-300 justify-center border border-pink-400">
               Maya
@@ -66,6 +70,7 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>架空サイトLP作成</p>
+                  <p className="text-gray-400 text-xs">使用技術：HTML, CSS</p>
                 </div>
               </div>
             </div>
@@ -83,6 +88,9 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>架空ビジュアルサイト作成</p>
+                  <p className="text-gray-400 text-xs">
+                    使用技術：HTML, jQuery
+                  </p>
                 </div>
               </div>
             </div>
@@ -100,6 +108,9 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>条件分岐練習、ゲーム制作</p>
+                  <p className="text-gray-400 text-xs">
+                    使用技術：HTML, vanilla.js
+                  </p>
                 </div>
               </div>
             </div>
@@ -117,6 +128,7 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>かわいいお買い物アプリ作成</p>
+                  <p className="text-gray-400 text-xs">使用技術：Vue.js</p>
                 </div>
               </div>
             </div>
@@ -134,6 +146,7 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>OCR（光学文字認識）アプリ作成</p>
+                  <p className="text-gray-400 text-xs">使用技術：React.js </p>
                 </div>
               </div>
             </div>
@@ -151,6 +164,9 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>チャットアプリ作成</p>
+                  <p className="text-gray-400 text-xs">
+                    使用技術：vanilla.js, Firebase
+                  </p>
                 </div>
               </div>
             </div>
@@ -169,6 +185,9 @@ export default function Index() {
                 <div className="mt-4 pl-4">
                   <p>レストラン情報共有アプリ</p>
                   <p>※モバイルサイトです</p>
+                  <p className="text-gray-400 text-xs">
+                    使用技術：Next.js, Tailwind CSS, Firebase, vercel
+                  </p>
                 </div>
               </div>
             </div>
@@ -186,6 +205,9 @@ export default function Index() {
                 </a>
                 <div className="mt-4 pl-4">
                   <p>演出家・劇場マッチングアプリ</p>
+                  <p className="text-gray-400 text-xs">
+                    使用技術：Next.js, Tailwind CSS, vercel
+                  </p>
                 </div>
               </div>
             </div>
@@ -202,7 +224,8 @@ export default function Index() {
                   ポートフォリオサイトへ
                 </a>
                 <div className="mt-4 pl-4">
-                  <p>使用技術：Maya, UE4, AfterEffect, PhotoShop</p>
+                  <p>CG制作物（静止画、動画）</p>
+                  <p>Maya, UE4, AfterEffect, PhotoShop</p>
                 </div>
               </div>
             </div>
@@ -210,13 +233,19 @@ export default function Index() {
           <p className="pt-24 text-center text-2xs">
             Contact :　sakura.m.208@gmail.com
           </p>
-          <p className="p-5 pb-10 text-center text-2xs">
-            Twitter ：　<a href="https://twitter.com/sakura_m_04">sakura.m</a>
-          </p>
+          <div className="flex items-center mt-2 ">
+          <a href="https://twitter.com/sakura_m_04">
+            {" "}
+            <Image src={twitterImage} width={50} height={50} alt={"twitter"} />
+            </a>
+            　
+          <a href="https://github.com/sakura-temmie">
+            {" "}
+            <Image src={githubImage} width={40} height={40} alt={"github"} />
+          </a>
+          </div>
         </div>
       </main>
-      {/* <footer className="">
-      </footer> */}
     </>
   );
 }
