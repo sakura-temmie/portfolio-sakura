@@ -218,7 +218,7 @@ export default function Index() {
               </div>
               <div className="pt-5 ml-6 text-gray-500">
                 <a
-                  href="https://portfolio.adobe.com/5fa7ee5e-dc43-46f8-a593-4f7979e51d62/editor/"
+                  href="https://sakuram2089314.myportfolio.com/"
                   className="text-2xl border-b-2 px-4 pb-1"
                 >
                   ポートフォリオサイトへ
@@ -234,15 +234,20 @@ export default function Index() {
             Contact :　sakura.m.208@gmail.com
           </p>
           <div className="flex items-center mt-2 ">
-          <a href="https://twitter.com/sakura_m_04">
-            {" "}
-            <Image src={twitterImage} width={50} height={50} alt={"twitter"} />
+            <a href="https://twitter.com/sakura_m_04">
+              {" "}
+              <Image
+                src={twitterImage}
+                width={50}
+                height={50}
+                alt={"twitter"}
+              />
             </a>
             　
-          <a href="https://github.com/sakura-temmie">
-            {" "}
-            <Image src={githubImage} width={40} height={40} alt={"github"} />
-          </a>
+            <a href="https://github.com/sakura-temmie">
+              {" "}
+              <Image src={githubImage} width={40} height={40} alt={"github"} />
+            </a>
           </div>
         </div>
       </main>
