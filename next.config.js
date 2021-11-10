@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["news.mynavi.jp"],
+    domains: ["www.wp-benricho.com"],
   },
 };

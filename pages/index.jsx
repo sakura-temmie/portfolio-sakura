@@ -1,145 +1,152 @@
-import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
-import topImage from "../public/topImage.jpg";
+import Link from "next/link";
+import topImage from "../public/sakura2.jpg";
+import selfImage from "../public/selfImage.jpg";
+import flower from "../public/flower1.png";
+import gb from "../public/gb1.png";
+import ocr from "../public/ocr2.png";
+import sl from "../public/sl01.png";
+import meshi from "../public/meshi1.png";
 import githubImage from "../public/01.png";
-import Product from "../components/Product"
-
-const twitterImage =
-  "https://news.mynavi.jp/article/20210809-1942830/images/000a_l.jpg/webp";
+import TopSentence from "../components/TopSentence";
+import Layout from "../components/Layout";
+import Modal from "../components/Modal";
+import Modal2 from "../components/Modal2";
+import Modal3 from "../components/Modal3";
+import Modal4 from "../components/Modal4";
+import Modal5 from "../components/Modal5";
+import { useState } from "react";
 
 export default function Index() {
+  const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+  const [show5, setShow5] = useState(false);
+
+  const twitterImage =
+    "https://www.wp-benricho.com/www/wp-content/uploads/2016/06/TwitterLogo.png";
+
   return (
     <>
-      <Head>
-        <title>Sakura-P-site</title>
-      </Head>
-      <main className="flex flex-col flex-grow items-center pb-20 bg-gray-100">
+      <Layout title="sakura-portfolio">
         <Image src={topImage} alt="logo" />
-        <div className="flex flex-col items-center absolute top-60 left-50 text-white justify-center">
-          <p className="font-serif tracking-widest text-4xl">
-            作りたいに忠実に
+        <div className="flex flex-col items-center absolute top-80 left-50 text-white justify-center">
+          <p className="font-serif tracking-widest text-6xl mt-6">
+            Sakura Miyamoto
           </p>
-          <p className="font-serif tracking-widest text-2xl mt-6">宮本さくら</p>
+          <p className="font-serif tracking-widest text-4xl mt-40">
+            About this site
+          </p>
+          <p className="font-serif tracking-widest text-xl mt-4">
+            ここはジースアカデミーの宮本さくらのポートフォリオサイトです。
+          </p>
+          <p className="font-serif tracking-widest text-xl mt-4">
+            これまでに手がけた制作物、身につけたスキルをまとめています。
+          </p>
+          <p className="font-serif tracking-widest text-xl mt-4"></p>
         </div>
-        <div className="absolute right-10"></div>
-        <div className="mt-24 flex flex-col font-serif tracking-widest items-center">
-          <p className="text-gray-700 text-opacity-75">課題解決をスマートに</p>
-          <p className="mt-4 text-gray-700 text-opacity-75">もっと素早く</p>
-        </div>
-        <div className="my-24">
-          <div className="flex justify-center my-8">
-            <p className="border-b text-xl px-4 pb-1 border-gray-400 text-gray-600">
-              得意技術
-            </p>
-          </div>
-          <div className="flex font-serif">
-            <div className="rounded-full h-40 w-40 flex items-center border-pink-300 justify-center border border-pink-400">
-              JavaScript
-              <br />
-              (vanilla.js)
-            </div>
-            <div className="rounded-full h-40 w-40 flex items-center border-yellow-300 ml-6 justify-center border border-pink-400">
-              React / Next.js
-            </div>
-            <div className="rounded-full h-40 w-40 flex items-center ml-6 border-yellow-300 justify-center border border-pink-400">
-              Firebase
-            </div>
-            <div className="rounded-full h-40 w-40 flex items-center ml-6 border-yellow-300 justify-center border border-pink-400">
-              Maya
+        <div className="flex flex-col items-center text-gray-600 text-white justify-center my-60">
+          <p className="font-serif tracking-widest text-4xl">About Me</p>
+          <div className="flex items-center mt-4">
+            <Image src={selfImage} alt="selfImage" width="150" height="150" />
+            <div className="ml-4">
+              <TopSentence text="大阪府出身。大学では社会学を専攻。" />
+              <TopSentence text="人体工学という人にフォーカスした学問と、技術的な分野にも興味があったので、" />
+              <TopSentence text="人体工学と翻訳アプリを組み合わせて研究を行いました。" />
+              <TopSentence text="その後外車ディーラーに勤め、バックオフィスと一部営業活動を担当。" />
+              <TopSentence text="現在は、新しいことに挑戦がしたい・学び続ける状況に身を置きたいため、" />
+              <TopSentence text="以前より興味のあったIT業界への転職活動中です。" />
             </div>
           </div>
         </div>
-        <div className="bg-white w-full flex flex-col items-center py-24">
-          <div className="flex justify-center">
-            <p className="border-b text-xl px-4 pb-1 mb-8 border-gray-400 text-gray-600">
-              制作物
-            </p>
+        <div className="flex flex-col items-center text-gray-600 text-white justify-center my-60">
+          <p className="font-serif tracking-widest text-4xl mb-8">Works</p>
+          <div className="flex">
+            <div
+              className="flex flex-col items-center cursor-pointer"
+              onClick={() => setShow(true)}
+            >
+              <Image
+                src={flower}
+                alt="logo"
+                width="200"
+                height="150"
+                objectFit="contain"
+              />
+              <p>Flower</p>
+            </div>
+            <div
+              className="flex flex-col items-center cursor-pointer ml-4"
+              onClick={() => setShow2(true)}
+            >
+              <Image
+                src={gb}
+                alt="logo"
+                width="200"
+                height="150"
+                objectFit="contain"
+              />
+              <p>GEEKBOOK</p>
+            </div>
+            <div
+              className="flex flex-col items-center ml-12 cursor-pointer"
+              onClick={() => setShow3(true)}
+            >
+              <Image
+                src={ocr}
+                alt="logo"
+                width="200"
+                height="150"
+                objectFit="contain"
+              />
+              <p>One Phrase OCR</p>
+            </div>
+            <div
+              className="flex flex-col items-center ml-12 cursor-pointer"
+              onClick={() => setShow4(true)}
+            >
+              <Image
+                src={sl}
+                alt="logo"
+                width="200"
+                height="150"
+                objectFit="contain"
+              />
+              <p>Spot-light</p>
+            </div>
+            <div
+              className="flex flex-col items-center ml-12 cursor-pointer"
+              onClick={() => setShow5(true)}
+            >
+              <Image
+                src={meshi}
+                alt="logo"
+                width="200"
+                height="150"
+                objectFit="contain"
+              />
+              <p>メシラン</p>
+            </div>
           </div>
-          <div className="">
-            <Product
-              type="HP作成"
-              nom="1"
-              url="https://kadai-11-23.sakura.ne.jp/html_sakuramiyamoto_23/"
-              title="チーズアカデミー"
-              contents="架空サイトLP作成"
-              tech="HTML, CSS"
-            />
-            <Product
-              type="HP作成"
-              nom="2"
-              url="https://kadai-11-23.sakura.ne.jp/sakura_11_23/"
-              title="Flower"
-              contents="架空ビジュアルサイト作成"
-              tech="HTML, jQuery"
-            />
-            <Product
-              type="ゲーム作成"
-              nom="3"
-              url="https://kadai-11-23.sakura.ne.jp/Game_11_23/game.html"
-              title="女心理解度診断"
-              contents="条件分岐練習、ゲーム制作"
-              tech="HTML, vanilla.js"
-            />
-            <Product
-              type="メモアプリ"
-              nom="4"
-              url="https://kadai-11-23.sakura.ne.jp/my_shopping/"
-              title="まい・しょっぴんぐ"
-              contents="かわいいお買い物アプリ作成"
-              tech="Vue.js"
-            />
-            <Product
-              type="OCRアプリ"
-              nom="5"
-              url="https://kadai-11-23.sakura.ne.jp/OphOcr/"
-              title="One Phrase OCR"
-              contents="OCR（光学文字認識）アプリ作成"
-              tech="React.js, tesseract.js"
-            />
-            <Product
-              type="DBアプリ"
-              nom="6"
-              url="https://atuki.sakura.ne.jp/geekbook/public/login.php"
-              title="GEEK BOOK"
-              contents="学習知識共有アプリ作成(チーム開発：フロント担当)"
-              tech="jQuery, PHP"
-            />
-            <Product
-              type="チャットアプリ"
-              nom="7"
-              url="https://kadai-11-23.sakura.ne.jp/chatapp02/public/login_form.php"
-              title="My Chat App"
-              contents="チャットアプリ作成"
-              tech="vanilla.js, PHP"
-            />
-            <Product
-              type="SNS"
-              nom="8"
-              url="https://meshi-ran.vercel.app/"
-              title="メシラン"
-              contents="レストラン情報共有モバイルアプリ(チーム開発：フロント担当)"
-              tech="Next.js, Tailwind CSS, Firebase(v9), vercel"
-            />
-            <Product
-              type="DB web アプリ"
-              nom="9"
-              url="https://spotlight-spot.vercel.app/"
-              title="Spot-Light"
-              contents="演出家・劇場マッチングアプリ(チーム開発：フロント担当)"
-              tech="Next.js, Tailwind CSS, Laravel, vercel"
-            />
-            <Product
-              type="CG/VFX"
-              nom="10"
-              url="https://sakuram2089314.myportfolio.com/"
-              title="ポートフォリオサイトへ"
-              contents="CG制作物（静止画、動画）"
-              tech="Maya, UE4, AfterEffect, PhotoShop"
-            />
-          </div>
-          <p className="pt-24 text-center text-2xs">
-            Contact :　sakura.m.208@gmail.com
+          <Modal show={show} setShow={setShow} />
+          <Modal2 show={show2} setShow={setShow2} />
+          <Modal3 show={show3} setShow={setShow3} />
+          <Modal4 show={show4} setShow={setShow4} />
+          <Modal5 show={show5} setShow={setShow5} />
+          <Link href="/Products">
+            <a className="p-2 cursor-pointer border-b mt-8">
+              その他制作物はこちら
+            </a>
+          </Link>
+        </div>
+        <div className="flex flex-col items-center text-gray-600 text-white justify-center my-60">
+          <p className="font-serif tracking-widest text-4xl">Contact</p>
+          <p className="font-serif tracking-widest text-xl mt-4">
+            Mail : sakura.m.208@gmail.com
+          </p>
+          <p className="font-serif tracking-widest text-xl mt-4">
+            TEL : 070-4807-5662
           </p>
           <div className="flex items-center mt-2 ">
             <a href="https://twitter.com/sakura_m_04">
@@ -158,7 +165,7 @@ export default function Index() {
             </a>
           </div>
         </div>
-      </main>
+      </Layout>
     </>
   );
 }
