@@ -9,7 +9,7 @@ const Modal = ({ show, setShow }) => {
           <p className="font-serif tracking-widest text-6xl mt-6">Spot-light</p>
           <a
             className="font-serif mt-14 ml-6"
-            href="https://kadai-11-23.sakura.ne.jp/OphOcr/"
+            href="https://spotlight-spot.vercel.app/"
           >
             サイトへ
           </a>

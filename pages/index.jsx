@@ -32,14 +32,12 @@ export default function Index() {
       <Layout title="sakura-portfolio">
         <Image src={topImage} alt="logo" />
         <div className="flex flex-col items-center absolute top-80 left-50 text-white justify-center">
-          <p className="font-serif tracking-widest text-6xl mt-6">
-            Sakura Miyamoto
-          </p>
+          <p className="font-serif tracking-widest text-6xl mt-6">Sakura . M</p>
           <p className="font-serif tracking-widest text-4xl mt-40">
             About this site
           </p>
           <p className="font-serif tracking-widest text-xl mt-4">
-            ここはジースアカデミーの宮本さくらのポートフォリオサイトです。
+            ここはSakura.mのポートフォリオサイトです。
           </p>
           <p className="font-serif tracking-widest text-xl mt-4">
             これまでに手がけた制作物、身につけたスキルをまとめています。
@@ -56,9 +54,30 @@ export default function Index() {
               <TopSentence text="人体工学と翻訳アプリを組み合わせて研究を行いました。" />
               <TopSentence text="その後外車ディーラーに勤め、バックオフィスと一部営業活動を担当。" />
               <TopSentence text="現在は、新しいことに挑戦がしたい・学び続ける状況に身を置きたいため、" />
-              <TopSentence text="以前より興味のあったIT業界への転職活動中です。" />
+              <TopSentence text="以前より興味のあったIT業界に挑戦いたしました。" />
             </div>
           </div>
+            <div className="flex items-center mt-2 ">
+              <a href="https://twitter.com/sakura_m_04">
+                {" "}
+                <Image
+                  src={twitterImage}
+                  width={50}
+                  height={50}
+                  alt={"twitter"}
+                />
+              </a>
+              　
+              <a href="https://github.com/sakura-temmie">
+                {" "}
+                <Image
+                  src={githubImage}
+                  width={40}
+                  height={40}
+                  alt={"github"}
+                />
+              </a>
+            </div>
         </div>
         <div className="flex flex-col items-center text-gray-600 text-white justify-center my-60">
           <p className="font-serif tracking-widest text-4xl mb-8">Works</p>
@@ -139,31 +158,6 @@ export default function Index() {
               その他制作物はこちら
             </a>
           </Link>
-        </div>
-        <div className="flex flex-col items-center text-gray-600 text-white justify-center my-60">
-          <p className="font-serif tracking-widest text-4xl">Contact</p>
-          <p className="font-serif tracking-widest text-xl mt-4">
-            Mail : sakura.m.208@gmail.com
-          </p>
-          <p className="font-serif tracking-widest text-xl mt-4">
-            TEL : 070-4807-5662
-          </p>
-          <div className="flex items-center mt-2 ">
-            <a href="https://twitter.com/sakura_m_04">
-              {" "}
-              <Image
-                src={twitterImage}
-                width={50}
-                height={50}
-                alt={"twitter"}
-              />
-            </a>
-            　
-            <a href="https://github.com/sakura-temmie">
-              {" "}
-              <Image src={githubImage} width={40} height={40} alt={"github"} />
-            </a>
-          </div>
         </div>
       </Layout>
     </>
