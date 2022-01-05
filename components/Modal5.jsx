@@ -1,5 +1,7 @@
 import Image from "next/image";
 import topImage from "../public/meshi1.png";
+import imageGif1 from "../public/1.gif";
+import imageGif2 from "../public/2.gif";
 
 const Modal = ({ show, setShow }) => {
   if (show) {
@@ -15,13 +17,6 @@ const Modal = ({ show, setShow }) => {
           </a>
         </div>
         <div className="flex mt-4">
-          <Image
-            src={topImage}
-            alt="logo"
-            width="300"
-            height="200"
-            objectFit="contain"
-          />
           <div className="ml-4">
             <p className="font-light text-gray-700 leading-relaxed mt-2">
               動画ベースグルメSNSを制作しました。
@@ -32,11 +27,33 @@ const Modal = ({ show, setShow }) => {
               <br />
               こだわった点は、TikTokのようなモダンなSNSの見た目をNext.jsで表現したところです。
             </p>
-            <p className="font-light text-gray-700 leading-relaxed mt-12">
+            <p className="font-light text-gray-700 leading-relaxed mt-4">
               使用技術
               <br />
               Next.js, Tailwind CSS, Firebase(v9), vercel
             </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-end mt-4">
+          <div className="m-auto text-center">
+            <p>ログイン後メインページ</p>
+            <Image
+              src={imageGif2}
+              alt="logo"
+              width="500"
+              height="400"
+              objectFit="contain"
+            />
+          </div>
+          <div className="pt-12 m-auto text-center">
+            <p>実際の投稿の様子</p>
+            <Image
+              src={imageGif1}
+              alt="logo"
+              width="500"
+              height="300"
+              objectFit="contain"
+            />
           </div>
         </div>
         <div className="flex items-center justify-end mt-4">

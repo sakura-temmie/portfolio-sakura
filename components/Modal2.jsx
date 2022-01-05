@@ -1,5 +1,6 @@
 import Image from "next/image";
 import topImage from "../public/gb1.png";
+import imageGif from "../public/0.gif"
 
 const Modal = ({ show, setShow }) => {
   if (show) {
@@ -14,25 +15,27 @@ const Modal = ({ show, setShow }) => {
             サイトへ
           </a>
         </div>
-        <div className="flex mt-4">
+        <div className="m-auto text-center">
           <Image
-            src={topImage}
+            src={imageGif}
             alt="logo"
-            width="300"
-            height="300"
+            width="500"
+            height="400"
             objectFit="contain"
           />
+        </div>
+        <div className="flex mt-4">
           <div className="ml-4">
             <p className="font-light text-gray-700 leading-relaxed mt-2">
               データベースサイトを制作しました。
               <br />
-              作った経緯としては、ジーズアカデミーでは学んだことを共有する文化はありますが、
+              作った経緯は、コミュニティでは学んだことを共有する文化はありますが、
               <br />
               知見がslackにしか蓄積していかないという問題がありました。
               <br />
               その問題を解決するため、投稿式のデータベースサイトを作成しました。
               <br />
-              ユーザーの操作性と情報の信頼性を考え、ページネーションとOGP画像の表示を実装しました。
+              ユーザーの操作性と情報の信頼性を考え、ブックマーク機能、ページネーションとOGP画像の表示を実装しました。
             </p>
             <p className="font-light text-gray-700 leading-relaxed mt-12">
               使用技術

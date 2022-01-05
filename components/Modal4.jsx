@@ -33,6 +33,9 @@ const Modal = ({ show, setShow }) => {
               こだわった点は、フロントエンドとバックエンドのリポジトリを完全に分離し、
               <br />
               お互いがストレスフリーに開発できるように環境を整えたところです。
+              <br />
+              <br />
+              現在メンテナンスにて、Laravel、AWS停止中です。
             </p>
             <p className="font-light text-gray-700 leading-relaxed mt-12">
               使用技術
