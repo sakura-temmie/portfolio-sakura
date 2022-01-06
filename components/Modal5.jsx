@@ -7,14 +7,16 @@ const Modal = ({ show, setShow }) => {
   if (show) {
     return (
       <div className="shadow-lg rounded p-8 bg-white w-3/4 absolute left-50">
-        <div className="flex">
+        <div className="flex items-end">
           <p className="font-serif tracking-widest text-6xl mt-6">メシラン</p>
-          <a
-            className="font-serif mt-14 ml-6"
-            href="https://kadai-11-23.sakura.ne.jp/OphOcr/"
-          >
-            サイトへ
-          </a>
+          <div className="m-2 ">
+            <a
+              className="font-serif px-2 py-1 text-pink-600 border border-pink-600 font-semibold rounded hover:bg-pink-100"
+              href="https://kadai-11-23.sakura.ne.jp/OphOcr/"
+            >
+              サイトへ
+            </a>
+          </div>
         </div>
         <div className="flex mt-4">
           <div className="ml-4">

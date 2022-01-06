@@ -1,19 +1,21 @@
 import Image from "next/image";
 import topImage from "../public/gb1.png";
-import imageGif from "../public/0.gif"
+import imageGif from "../public/0.gif";
 
 const Modal = ({ show, setShow }) => {
   if (show) {
     return (
       <div className="shadow-lg rounded p-8 bg-white w-3/4 absolute left-50">
-        <div className="flex">
+        <div className="flex items-end">
           <p className="font-serif tracking-widest text-6xl mt-6">GEEKBOOK</p>
-          <a
-            className="font-serif mt-14 ml-6"
-            href="https://atuki.sakura.ne.jp/geekbook/public/login.php/"
-          >
-            サイトへ
-          </a>
+          <div className="m-2 ">
+            <a
+              className="font-serif px-2 py-1 text-pink-600 border border-pink-600 font-semibold rounded hover:bg-pink-100"
+              href="https://atuki.sakura.ne.jp/geekbook/public/login.php/"
+            >
+              サイトへ
+            </a>
+          </div>
         </div>
         <div className="m-auto text-center">
           <Image
