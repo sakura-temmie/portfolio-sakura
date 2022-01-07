@@ -12,7 +12,7 @@ const Modal = ({ show, setShow }) => {
           <div className="m-2 ">
             <a
               className="font-serif px-2 py-1 text-pink-600 border border-pink-600 font-semibold rounded hover:bg-pink-100"
-              href="https://kadai-11-23.sakura.ne.jp/OphOcr/"
+              href="https://meshi-ran.vercel.app/"
             >
               サイトへ
             </a>
